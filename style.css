@@ -1,30 +1,20 @@
+/*****************
+GENERAL
+*****************/
 body {
 	text-align: center;
 }
 
-.top-header {
-	background-color: orange;
-	color: white;
-}
-
-header span {
-	font-size: 26px;
-}
-
-.main-heading {
-	font-size: 72px;
-}
-
-#main-content {
-	background-color: lightsteelblue;
-}
-
-#main-content p {
-	font-weight: bold;
-}
-
 p {
 	color: lightslategrey;
+}
+
+h2 {
+	font-size: 3.3125em;
+}
+
+h3 {
+	font-size: 1.25em;
 }
 
 div {
@@ -33,6 +23,7 @@ div {
 
 a:link {
 	color: orange;
+	text-decoration: none;
 }
 
 a:visited {
@@ -46,6 +37,55 @@ a:hover {
 :focus {
 	border: 1px solid black;
 }
+
+/*****************
+HEADER
+*****************/
+
+.top-banner {
+	background-color: orange;
+	color: white;
+	font-size: 1.8em;
+}
+
+span.title {
+	font-size: 1.625rem;
+}
+
+.top-heading {
+	font-size: 5.625rem;
+}
+
+/*****************
+INTRO
+*****************/
+
+.intro {
+	font-size: 1.25em;
+	line-height: 1.6;
+}
+
+.intro span {
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*****************
+MAIN CONTENT
+*****************/
+
+#main-content {
+	background-color: lightsteelblue;
+	width: 75%;
+}
+
+#main-content p {
+	font-weight: bold;
+}
+
+/*****************
+FOOTER
+*****************/
 
 footer p {
 	color: slategrey;
