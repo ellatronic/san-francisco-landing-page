@@ -1,0 +1,52 @@
+body {
+	text-align: center;
+}
+
+.top-header {
+	background-color: orange;
+	color: white;
+}
+
+header span {
+	font-size: 26px;
+}
+
+.main-heading {
+	font-size: 72px;
+}
+
+#main-content {
+	background-color: lightsteelblue;
+}
+
+#main-content p {
+	font-weight: bold;
+}
+
+p {
+	color: lightslategrey;
+}
+
+div {
+	background-color: lightblue;
+}
+
+a:link {
+	color: orange;
+}
+
+a:visited {
+	color: steelblue;
+}
+
+a:hover {
+	color: tomato;
+}
+
+:focus {
+	border: 1px solid black;
+}
+
+footer p {
+	color: slategrey;
+}
