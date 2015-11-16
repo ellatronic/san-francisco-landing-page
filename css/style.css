@@ -1,42 +1,105 @@
+/*****************************
+RESET BROWSER DEFAULTS
+*****************************/
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+/*****************
+WEB FONTS
+*****************/
+@font-face {
+    font-family: 'Oswald Regular';
+    src: url('../fonts/oswald-regular-webfont.eot');
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-regular-webfont.woff') format('woff'),
+         url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
+         url('../fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Droid Serif Regular';
+    src: url('../fonts/droidserif-regular-webfont.eot');
+    src: url('../fonts/droidserif-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/droidserif-regular-webfont.woff2') format('woff2'),
+         url('../fonts/droidserif-regular-webfont.woff') format('woff'),
+         url('../fonts/droidserif-regular-webfont.ttf') format('truetype'),
+         url('../fonts/droidserif-regular-webfont.svg#droid_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*****************
 GENERAL
 *****************/
 * {
-	border: 1px solid red;
 	box-sizing: border-box;
 }
 
 body {
+	color: #878787;
+	margin: 0;
+	font: 1em/1.5 'Droid Serif Regular', serif;
 	text-align: center;
 }
 
-p {
-	color: lightslategrey;
+h1 {
+	font: normal 5rem/1.1 'Oswald Regular', sans-serif;
+	color: rgba(255, 255, 255, 1);
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
 }
 
 h2 {
-	font-size: 3.3125em;
+	font: normal 3.3125rem/1.1 'Oswald Regular';
+	margin: 0 0 .5em;
 }
 
 h3 {
-	font-size: 1.25em;
+	font: normal 2rem/1.2 'Oswald Regular';
+	color: #48525c;
+	margin-bottom: 1rem;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+p {
+	color: #000;
+}
+
+li {
+	list-style-type: none;
 }
 
 div {
-	background-color: lightblue;
+	background-color: #cad7d7;
 }
 
 a:link {
-	color: orange;
+	font-size: 1rem;
+	color: #769194;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 a:visited {
-	color: steelblue;
+	color: #769194;
 }
 
 a:hover {
-	color: tomato;
+	color: rgba(221, 95, 36, .4);
+}
+
+a:active {
+	color: #a20021;
 }
 
 :focus {
@@ -48,33 +111,53 @@ HEADER
 *****************/
 
 .top-banner {
-	background-color: orange;
-	color: white;
-	font-size: 1.8em;
+	padding: 50px 25px 100px;
+	max-height: 281px;
+	background: linear-gradient(rgba(221, 95, 36, .7), transparent 60%),
+				linear-gradient(0deg, rgba(255, 255, 255, .5), transparent),
+				#dd5f24 url('../img/sf-gg-bridge.jpeg') no-repeat center;
+	background-size: cover;
+	box-shadow: 0 2px 15px #aaa;
 }
 
-span.title {
-	font-size: 1.625rem;
+.title {
+	padding: 10px 0;
+	color: #fff;
+	font: normal 1.6rem 'Oswald Regular';
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
+	text-transform: uppercase;
 }
 
 .top-heading {
-	font-size: 5.625rem;
+	font-size: 3rem;
+}
+
+.arrow {
+	display: none;
 }
 
 /*****************
-INTRO
+CONTENT
 *****************/
+.primary-content,
+.secondary-content {
+	width: 100%;
+	padding: 20px;
+	border-top: none;
+}
+
 .primary-content {
-	padding-top: 25px;
-	padding-bottom: 95px;
+	margin: auto;
+	max-width: 960px;
+	background-color: #eaeae2;
 }
 
-/*****************
-INTRO
-*****************/
+.primary-content p {
+	font-weight: bold;
+}
 
 .intro {
-	font-size: 1.25em;
+	font-size: 1.1em;
 	line-height: 1.6;
 }
 
@@ -83,28 +166,31 @@ INTRO
 	font-style: italic;
 }
 
-/*****************
-MAIN CONTENT
-*****************/
-
-#main-content {
-	background-color: lightsteelblue;
-	width: 75%;
-}
-
-#main-content p {
-	font-weight: bold;
-}
-
 .restaurants {
-	margin-top: 105px;
-	border-top: 10px solid orange;
+	color: #000;
+	padding: 10% 12%;
+	margin: 50px 0 20px;
+	max-height: 325px;
+	border-top: 10px solid #a20021;
+	background: linear-gradient(to top, rgba(255, 255, 255, .5) 100%, transparent),
+				#a20021 url('../img/iza-ramen.jpg') no-repeat center;
+	background-size: cover;
+	box-shadow: 15px 15px 50px -5px rgba(0, 0, 0, .8);
+	border-radius: 10px;
+}
+
+.restaurants h2,
+.restaurants p {
+	text-align: left;
+}
+
+.restaurants a:visited,
+.restaurants a:link {
+	color: #425757;
 }
 
 .secondary-content {
-	padding-top: 80px;
-	padding-bottom: 70px;
-	border: 2px dotted lightgrey;
+	border: 2px solid #dfe2e6;
 }
 
 .callout {
@@ -115,10 +201,157 @@ MAIN CONTENT
 	display: inline-block;
 }
 
+.hotels {
+	margin-bottom: 20px;
+}
+
+.hotels,
+.tips {
+	float: none;
+	width: 100%;
+}
+
+.hotels img,
+.tips img {
+	border-radius: 10px;
+}
+
+
 /*****************
 FOOTER
 *****************/
+.main-footer {
+	font: 1em 'Oswald Regular';
+	padding: 60px 0 10px;
+	border-bottom: 10px solid #a20021;
+}
 
 footer p {
 	color: slategrey;
+}
+
+/*****************
+MEDIA QUERIES
+*****************/
+@media (min-width: 768px) {
+	.top-banner {
+		padding: 100px 0 288px;
+		max-height: 576px;
+	}
+
+	.title {
+		font-size: 2.5rem;
+	}
+
+	.top-banner h1 {
+		font-size: 5.625rem;
+		margin-bottom: 125px;
+	}
+
+	.intro {
+	font-size: 1.25em;
+	}
+
+	.arrow {
+		display: inline;
+		width: 75px;
+	}
+
+	.primary-content,
+	.secondary-content {
+		width: 90%;
+	}
+
+	.top-border {
+		border-top: 2px solid #dfe2e6;
+	}
+
+	.primary-content {
+		padding: 25px 50px 95px;
+		margin-top: 20px;
+	}
+
+	.restaurants {
+		padding: 10% 12%;
+		margin: 50px 0 20px;
+		max-height: 600px;
+	}
+
+	.secondary-content {
+		margin: auto;
+	}
+}
+
+@media (min-width: 1024px) {
+	.top-banner {
+		padding: 153px 0 195px;
+		max-height: 800px;
+	}
+
+	.title {
+		font-size: 3.5rem;
+		margin-bottom: 30px;
+	}
+
+	.top-banner h1 {
+		font-size: 6.625rem;
+		margin-bottom: 150px;
+	}
+
+	.arrow {
+		width: 150px;
+	}
+
+	.primary-content {
+		margin: auto;
+		margin-top: 20px;
+		max-width: 960px;
+		width: 75%;
+	}
+
+	.restaurants {
+		padding: 18% 24%;
+		margin: 105px 0 60px;
+	}
+
+	/*****************
+	FLOATED COLUMNS
+	*****************/
+	.hotels,
+	.tips {
+		width: 46.5%;
+	}
+
+	.hotels {
+		float: right;
+	}
+
+	.tips {
+		float: left;
+	}
+
+	/*****************
+	FLOAT CLEARFIX
+	*****************/
+	.group:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1440px) {
+	.top-banner {
+		padding: 153px 0 127px;
+		max-height: 1080px;
+	}
+
+	.top-banner h1 {
+		font-size: 7.625rem;
+		margin-bottom: 300px;
+	}
+
+	.arrow {
+		width: 150px;
+	}
 }
